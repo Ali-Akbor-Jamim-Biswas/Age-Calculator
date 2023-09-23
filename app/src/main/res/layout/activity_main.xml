@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Current Date "
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textColor="#9A172260"
+        android:paddingEnd="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+
+        />
+    <TextView
+        android:id="@+id/currentDateTextView"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textAlignment="textEnd"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your age "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginStart="10dp"
+
+        />
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:outlineAmbientShadowColor="@color/black"
+
+        android:calendarTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Calculate age"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="#ffffff"
+        android:onClick="calculateAge"
+        android:textColor="#305A19"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jumpingText"
+        android:text="Happy Birthday to You"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="#305A19"
+        android:textAllCaps="true"
+        android:textAlignment="center" />
+
+
+
+
+
+</LinearLayout>
